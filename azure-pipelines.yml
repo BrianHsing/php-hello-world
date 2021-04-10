@@ -57,13 +57,6 @@ stages:
       inputs:
         PathtoPublish: $(build.artifactstagingdirectory)
 
-    - task: AzureWebApp@1
-      displayName: php-helloworld
-      inputs:
-        azureSubscription: $(serviceConnectionToAzure)
-        appType: webAppLinux
-        appName: $(appName)
-        package: $(build.artifactstagingdirectory)/**/*.zip
 
 - stage: Deploy
   displayName: 'Deploy Web App'
