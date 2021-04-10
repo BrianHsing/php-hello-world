@@ -8,7 +8,8 @@ trigger:
 
 variables:
 # the name of the service connection that you created above
-  serviceConnectionToAzure: connection-php-helloworld
+  serviceConnectionToAzure: connection-php-helloworld-rg
+
   # Azure Resource Manager connection created during pipeline creation
   azureSubscription: '6fae2847-db59-413e-8187-83b23c11ba7a'
 
