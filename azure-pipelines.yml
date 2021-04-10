@@ -45,9 +45,6 @@ stages:
       workingDirectory: $(rootFolder)
       displayName: 'Use PHP version $(phpVersion)'
 
-    - script: composer install --no-interaction --prefer-dist
-      workingDirectory: $(rootFolder)
-      displayName: 'Composer install'
 
     - task: ArchiveFiles@1
       displayName: 'Archive files'
