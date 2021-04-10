@@ -58,7 +58,7 @@ stages:
         PathtoPublish: $(build.artifactstagingdirectory)
 
     - task: AzureWebApp@1
-      displayName: Azure Web App Deploy
+      displayName: php-helloworld
       inputs:
         azureSubscription: $(serviceConnectionToAzure)
         appType: webAppLinux
